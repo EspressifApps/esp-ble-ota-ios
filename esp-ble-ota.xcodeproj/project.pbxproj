@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		266BC7C5274C9A5400C242D6 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 266BC7BB274C9A5400C242D6 /* SVRadialGradientLayer.m */; };
+		266BC7C6274C9A5400C242D6 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 266BC7BE274C9A5400C242D6 /* SVProgressAnimatedView.m */; };
+		266BC7C7274C9A5400C242D6 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 266BC7C1274C9A5400C242D6 /* SVProgressHUD.m */; };
+		266BC7C8274C9A5400C242D6 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 266BC7C2274C9A5400C242D6 /* SVIndefiniteAnimatedView.m */; };
+		266BC7C9274C9A5400C242D6 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 266BC7C3274C9A5400C242D6 /* SVProgressHUD.bundle */; };
+		2671B18D272FD62A0021C37C /* OTAMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2671B187272FD6290021C37C /* OTAMessage.m */; };
+		2671B18E272FD62A0021C37C /* EspCRC16.m in Sources */ = {isa = PBXBuildFile; fileRef = 2671B189272FD6290021C37C /* EspCRC16.m */; };
+		2671B18F272FD62A0021C37C /* BleOTAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2671B18C272FD6290021C37C /* BleOTAUtils.m */; };
+		26B7F79B272BC86D00A294E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F79A272BC86D00A294E3 /* AppDelegate.m */; };
+		26B7F79E272BC86D00A294E3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F79D272BC86D00A294E3 /* SceneDelegate.m */; };
+		26B7F7A1272BC86D00A294E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F7A0272BC86D00A294E3 /* ViewController.m */; };
+		26B7F7A4272BC86D00A294E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26B7F7A2272BC86D00A294E3 /* Main.storyboard */; };
+		26B7F7A6272BC87200A294E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26B7F7A5272BC87200A294E3 /* Assets.xcassets */; };
+		26B7F7A9272BC87200A294E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26B7F7A7272BC87200A294E3 /* LaunchScreen.storyboard */; };
+		26B7F7AC272BC87200A294E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F7AB272BC87200A294E3 /* main.m */; };
+		26B7F7B6272BC87300A294E3 /* esp_ble_otaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F7B5272BC87300A294E3 /* esp_ble_otaTests.m */; };
+		26B7F7C0272BC87300A294E3 /* esp_ble_otaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F7BF272BC87300A294E3 /* esp_ble_otaUITests.m */; };
+		26B7F7C2272BC87300A294E3 /* esp_ble_otaUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F7C1272BC87300A294E3 /* esp_ble_otaUITestsLaunchTests.m */; };
+		26B7F7D6272BCC0600A294E3 /* UILabel+LabelHeightAndWidth.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F7D2272BCC0600A294E3 /* UILabel+LabelHeightAndWidth.m */; };
+		26B7F7D7272BCC0600A294E3 /* payFirstNav.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F7D5272BCC0600A294E3 /* payFirstNav.m */; };
+		26B7F7E1272BCC3C00A294E3 /* ESPFBYBLEHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F7DA272BCC3C00A294E3 /* ESPFBYBLEHelper.m */; };
+		26B7F7E2272BCC3C00A294E3 /* ESPFBYBLEIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F7DB272BCC3C00A294E3 /* ESPFBYBLEIO.m */; };
+		26B7F7E9272BCF4400A294E3 /* EspDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F7E7272BCF4400A294E3 /* EspDevice.m */; };
+		26B7F7EC272BCFDC00A294E3 /* EspSwitchDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F7EB272BCFDC00A294E3 /* EspSwitchDevice.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26B7F7B2272BC87300A294E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26B7F78E272BC86D00A294E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26B7F795272BC86D00A294E3;
+			remoteInfo = "esp-ble-ota";
+		};
+		26B7F7BC272BC87300A294E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26B7F78E272BC86D00A294E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26B7F795272BC86D00A294E3;
+			remoteInfo = "esp-ble-ota";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		266BC7BB274C9A5400C242D6 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		266BC7BC274C9A5400C242D6 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		266BC7BD274C9A5400C242D6 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		266BC7BE274C9A5400C242D6 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		266BC7BF274C9A5400C242D6 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		266BC7C0274C9A5400C242D6 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		266BC7C1274C9A5400C242D6 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		266BC7C2274C9A5400C242D6 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		266BC7C3274C9A5400C242D6 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		266BC7C4274C9A5400C242D6 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		2671B187272FD6290021C37C /* OTAMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTAMessage.m; sourceTree = "<group>"; };
+		2671B188272FD6290021C37C /* BleOTAUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleOTAUtils.h; sourceTree = "<group>"; };
+		2671B189272FD6290021C37C /* EspCRC16.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EspCRC16.m; sourceTree = "<group>"; };
+		2671B18A272FD6290021C37C /* OTAMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTAMessage.h; sourceTree = "<group>"; };
+		2671B18B272FD6290021C37C /* EspCRC16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EspCRC16.h; sourceTree = "<group>"; };
+		2671B18C272FD6290021C37C /* BleOTAUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BleOTAUtils.m; sourceTree = "<group>"; };
+		26B7F796272BC86D00A294E3 /* esp-ble-ota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "esp-ble-ota.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26B7F799272BC86D00A294E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		26B7F79A272BC86D00A294E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		26B7F79C272BC86D00A294E3 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		26B7F79D272BC86D00A294E3 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		26B7F79F272BC86D00A294E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		26B7F7A0272BC86D00A294E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		26B7F7A3272BC86D00A294E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26B7F7A5272BC87200A294E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26B7F7A8272BC87200A294E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		26B7F7AA272BC87200A294E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26B7F7AB272BC87200A294E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		26B7F7B1272BC87300A294E3 /* esp-ble-otaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "esp-ble-otaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26B7F7B5272BC87300A294E3 /* esp_ble_otaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = esp_ble_otaTests.m; sourceTree = "<group>"; };
+		26B7F7BB272BC87300A294E3 /* esp-ble-otaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "esp-ble-otaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26B7F7BF272BC87300A294E3 /* esp_ble_otaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = esp_ble_otaUITests.m; sourceTree = "<group>"; };
+		26B7F7C1272BC87300A294E3 /* esp_ble_otaUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = esp_ble_otaUITestsLaunchTests.m; sourceTree = "<group>"; };
+		26B7F7CF272BCB9400A294E3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		26B7F7D2272BCC0600A294E3 /* UILabel+LabelHeightAndWidth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LabelHeightAndWidth.m"; sourceTree = "<group>"; };
+		26B7F7D3272BCC0600A294E3 /* payFirstNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = payFirstNav.h; sourceTree = "<group>"; };
+		26B7F7D4272BCC0600A294E3 /* UILabel+LabelHeightAndWidth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LabelHeightAndWidth.h"; sourceTree = "<group>"; };
+		26B7F7D5272BCC0600A294E3 /* payFirstNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = payFirstNav.m; sourceTree = "<group>"; };
+		26B7F7DA272BCC3C00A294E3 /* ESPFBYBLEHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPFBYBLEHelper.m; sourceTree = "<group>"; };
+		26B7F7DB272BCC3C00A294E3 /* ESPFBYBLEIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPFBYBLEIO.m; sourceTree = "<group>"; };
+		26B7F7DE272BCC3C00A294E3 /* ESPFBYBLEHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPFBYBLEHelper.h; sourceTree = "<group>"; };
+		26B7F7DF272BCC3C00A294E3 /* ESPFBYBLEIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPFBYBLEIO.h; sourceTree = "<group>"; };
+		26B7F7E7272BCF4400A294E3 /* EspDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EspDevice.m; sourceTree = "<group>"; };
+		26B7F7E8272BCF4400A294E3 /* EspDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EspDevice.h; sourceTree = "<group>"; };
+		26B7F7EA272BCFDC00A294E3 /* EspSwitchDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EspSwitchDevice.h; sourceTree = "<group>"; };
+		26B7F7EB272BCFDC00A294E3 /* EspSwitchDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EspSwitchDevice.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26B7F793272BC86D00A294E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26B7F7AE272BC87300A294E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26B7F7B8272BC87300A294E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		266BC7BA274C9A5400C242D6 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				266BC7BB274C9A5400C242D6 /* SVRadialGradientLayer.m */,
+				266BC7BC274C9A5400C242D6 /* SVIndefiniteAnimatedView.h */,
+				266BC7BD274C9A5400C242D6 /* SVProgressHUD.h */,
+				266BC7BE274C9A5400C242D6 /* SVProgressAnimatedView.m */,
+				266BC7BF274C9A5400C242D6 /* SVProgressHUD-Prefix.pch */,
+				266BC7C0274C9A5400C242D6 /* SVRadialGradientLayer.h */,
+				266BC7C1274C9A5400C242D6 /* SVProgressHUD.m */,
+				266BC7C2274C9A5400C242D6 /* SVIndefiniteAnimatedView.m */,
+				266BC7C3274C9A5400C242D6 /* SVProgressHUD.bundle */,
+				266BC7C4274C9A5400C242D6 /* SVProgressAnimatedView.h */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		26B7F78D272BC86D00A294E3 = {
+			isa = PBXGroup;
+			children = (
+				26B7F798272BC86D00A294E3 /* esp-ble-ota */,
+				26B7F7B4272BC87300A294E3 /* esp-ble-otaTests */,
+				26B7F7BE272BC87300A294E3 /* esp-ble-otaUITests */,
+				26B7F797272BC86D00A294E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26B7F797272BC86D00A294E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26B7F796272BC86D00A294E3 /* esp-ble-ota.app */,
+				26B7F7B1272BC87300A294E3 /* esp-ble-otaTests.xctest */,
+				26B7F7BB272BC87300A294E3 /* esp-ble-otaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26B7F798272BC86D00A294E3 /* esp-ble-ota */ = {
+			isa = PBXGroup;
+			children = (
+				26B7F7D8272BCC3C00A294E3 /* ESPBLEResources */,
+				26B7F7D0272BCBFD00A294E3 /* ESPOTATool */,
+				26B7F7CE272BCACF00A294E3 /* pch */,
+				26B7F799272BC86D00A294E3 /* AppDelegate.h */,
+				26B7F79A272BC86D00A294E3 /* AppDelegate.m */,
+				26B7F79C272BC86D00A294E3 /* SceneDelegate.h */,
+				26B7F79D272BC86D00A294E3 /* SceneDelegate.m */,
+				26B7F79F272BC86D00A294E3 /* ViewController.h */,
+				26B7F7A0272BC86D00A294E3 /* ViewController.m */,
+				26B7F7A2272BC86D00A294E3 /* Main.storyboard */,
+				26B7F7A5272BC87200A294E3 /* Assets.xcassets */,
+				26B7F7A7272BC87200A294E3 /* LaunchScreen.storyboard */,
+				26B7F7AA272BC87200A294E3 /* Info.plist */,
+				26B7F7AB272BC87200A294E3 /* main.m */,
+			);
+			path = "esp-ble-ota";
+			sourceTree = "<group>";
+		};
+		26B7F7B4272BC87300A294E3 /* esp-ble-otaTests */ = {
+			isa = PBXGroup;
+			children = (
+				26B7F7B5272BC87300A294E3 /* esp_ble_otaTests.m */,
+			);
+			path = "esp-ble-otaTests";
+			sourceTree = "<group>";
+		};
+		26B7F7BE272BC87300A294E3 /* esp-ble-otaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				26B7F7BF272BC87300A294E3 /* esp_ble_otaUITests.m */,
+				26B7F7C1272BC87300A294E3 /* esp_ble_otaUITestsLaunchTests.m */,
+			);
+			path = "esp-ble-otaUITests";
+			sourceTree = "<group>";
+		};
+		26B7F7CE272BCACF00A294E3 /* pch */ = {
+			isa = PBXGroup;
+			children = (
+				26B7F7CF272BCB9400A294E3 /* PrefixHeader.pch */,
+			);
+			path = pch;
+			sourceTree = "<group>";
+		};
+		26B7F7D0272BCBFD00A294E3 /* ESPOTATool */ = {
+			isa = PBXGroup;
+			children = (
+				2671B188272FD6290021C37C /* BleOTAUtils.h */,
+				2671B18C272FD6290021C37C /* BleOTAUtils.m */,
+				2671B18B272FD6290021C37C /* EspCRC16.h */,
+				2671B189272FD6290021C37C /* EspCRC16.m */,
+				2671B18A272FD6290021C37C /* OTAMessage.h */,
+				2671B187272FD6290021C37C /* OTAMessage.m */,
+				26B7F7D1272BCC0600A294E3 /* ESPFBYNav */,
+			);
+			path = ESPOTATool;
+			sourceTree = "<group>";
+		};
+		26B7F7D1272BCC0600A294E3 /* ESPFBYNav */ = {
+			isa = PBXGroup;
+			children = (
+				26B7F7D4272BCC0600A294E3 /* UILabel+LabelHeightAndWidth.h */,
+				26B7F7D2272BCC0600A294E3 /* UILabel+LabelHeightAndWidth.m */,
+				26B7F7D3272BCC0600A294E3 /* payFirstNav.h */,
+				26B7F7D5272BCC0600A294E3 /* payFirstNav.m */,
+			);
+			path = ESPFBYNav;
+			sourceTree = "<group>";
+		};
+		26B7F7D8272BCC3C00A294E3 /* ESPBLEResources */ = {
+			isa = PBXGroup;
+			children = (
+				266BC7BA274C9A5400C242D6 /* SVProgressHUD */,
+				26B7F7DE272BCC3C00A294E3 /* ESPFBYBLEHelper.h */,
+				26B7F7DA272BCC3C00A294E3 /* ESPFBYBLEHelper.m */,
+				26B7F7DF272BCC3C00A294E3 /* ESPFBYBLEIO.h */,
+				26B7F7DB272BCC3C00A294E3 /* ESPFBYBLEIO.m */,
+				26B7F7EA272BCFDC00A294E3 /* EspSwitchDevice.h */,
+				26B7F7EB272BCFDC00A294E3 /* EspSwitchDevice.m */,
+				26B7F7E8272BCF4400A294E3 /* EspDevice.h */,
+				26B7F7E7272BCF4400A294E3 /* EspDevice.m */,
+			);
+			path = ESPBLEResources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26B7F795272BC86D00A294E3 /* esp-ble-ota */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26B7F7C5272BC87300A294E3 /* Build configuration list for PBXNativeTarget "esp-ble-ota" */;
+			buildPhases = (
+				26B7F792272BC86D00A294E3 /* Sources */,
+				26B7F793272BC86D00A294E3 /* Frameworks */,
+				26B7F794272BC86D00A294E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "esp-ble-ota";
+			productName = "esp-ble-ota";
+			productReference = 26B7F796272BC86D00A294E3 /* esp-ble-ota.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26B7F7B0272BC87300A294E3 /* esp-ble-otaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26B7F7C8272BC87300A294E3 /* Build configuration list for PBXNativeTarget "esp-ble-otaTests" */;
+			buildPhases = (
+				26B7F7AD272BC87300A294E3 /* Sources */,
+				26B7F7AE272BC87300A294E3 /* Frameworks */,
+				26B7F7AF272BC87300A294E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26B7F7B3272BC87300A294E3 /* PBXTargetDependency */,
+			);
+			name = "esp-ble-otaTests";
+			productName = "esp-ble-otaTests";
+			productReference = 26B7F7B1272BC87300A294E3 /* esp-ble-otaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		26B7F7BA272BC87300A294E3 /* esp-ble-otaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26B7F7CB272BC87300A294E3 /* Build configuration list for PBXNativeTarget "esp-ble-otaUITests" */;
+			buildPhases = (
+				26B7F7B7272BC87300A294E3 /* Sources */,
+				26B7F7B8272BC87300A294E3 /* Frameworks */,
+				26B7F7B9272BC87300A294E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26B7F7BD272BC87300A294E3 /* PBXTargetDependency */,
+			);
+			name = "esp-ble-otaUITests";
+			productName = "esp-ble-otaUITests";
+			productReference = 26B7F7BB272BC87300A294E3 /* esp-ble-otaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26B7F78E272BC86D00A294E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					26B7F795272BC86D00A294E3 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					26B7F7B0272BC87300A294E3 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 26B7F795272BC86D00A294E3;
+					};
+					26B7F7BA272BC87300A294E3 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 26B7F795272BC86D00A294E3;
+					};
+				};
+			};
+			buildConfigurationList = 26B7F791272BC86D00A294E3 /* Build configuration list for PBXProject "esp-ble-ota" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26B7F78D272BC86D00A294E3;
+			productRefGroup = 26B7F797272BC86D00A294E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26B7F795272BC86D00A294E3 /* esp-ble-ota */,
+				26B7F7B0272BC87300A294E3 /* esp-ble-otaTests */,
+				26B7F7BA272BC87300A294E3 /* esp-ble-otaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26B7F794272BC86D00A294E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26B7F7A9272BC87200A294E3 /* LaunchScreen.storyboard in Resources */,
+				26B7F7A6272BC87200A294E3 /* Assets.xcassets in Resources */,
+				26B7F7A4272BC86D00A294E3 /* Main.storyboard in Resources */,
+				266BC7C9274C9A5400C242D6 /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26B7F7AF272BC87300A294E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26B7F7B9272BC87300A294E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26B7F792272BC86D00A294E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2671B18F272FD62A0021C37C /* BleOTAUtils.m in Sources */,
+				26B7F7E1272BCC3C00A294E3 /* ESPFBYBLEHelper.m in Sources */,
+				2671B18D272FD62A0021C37C /* OTAMessage.m in Sources */,
+				26B7F7E9272BCF4400A294E3 /* EspDevice.m in Sources */,
+				26B7F7E2272BCC3C00A294E3 /* ESPFBYBLEIO.m in Sources */,
+				26B7F7D6272BCC0600A294E3 /* UILabel+LabelHeightAndWidth.m in Sources */,
+				266BC7C8274C9A5400C242D6 /* SVIndefiniteAnimatedView.m in Sources */,
+				26B7F7D7272BCC0600A294E3 /* payFirstNav.m in Sources */,
+				266BC7C5274C9A5400C242D6 /* SVRadialGradientLayer.m in Sources */,
+				26B7F7A1272BC86D00A294E3 /* ViewController.m in Sources */,
+				266BC7C7274C9A5400C242D6 /* SVProgressHUD.m in Sources */,
+				26B7F79B272BC86D00A294E3 /* AppDelegate.m in Sources */,
+				26B7F7AC272BC87200A294E3 /* main.m in Sources */,
+				266BC7C6274C9A5400C242D6 /* SVProgressAnimatedView.m in Sources */,
+				2671B18E272FD62A0021C37C /* EspCRC16.m in Sources */,
+				26B7F7EC272BCFDC00A294E3 /* EspSwitchDevice.m in Sources */,
+				26B7F79E272BC86D00A294E3 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26B7F7AD272BC87300A294E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26B7F7B6272BC87300A294E3 /* esp_ble_otaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26B7F7B7272BC87300A294E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26B7F7C2272BC87300A294E3 /* esp_ble_otaUITestsLaunchTests.m in Sources */,
+				26B7F7C0272BC87300A294E3 /* esp_ble_otaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26B7F7B3272BC87300A294E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26B7F795272BC86D00A294E3 /* esp-ble-ota */;
+			targetProxy = 26B7F7B2272BC87300A294E3 /* PBXContainerItemProxy */;
+		};
+		26B7F7BD272BC87300A294E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26B7F795272BC86D00A294E3 /* esp-ble-ota */;
+			targetProxy = 26B7F7BC272BC87300A294E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		26B7F7A2272BC86D00A294E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26B7F7A3272BC86D00A294E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		26B7F7A7272BC87200A294E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26B7F7A8272BC87200A294E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26B7F7C3272BC87300A294E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		26B7F7C4272BC87300A294E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26B7F7C6272BC87300A294E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0.13;
+				DEVELOPMENT_TEAM = QWY5DY832N;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/esp-ble-ota/pch/PrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "esp-ble-ota/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This application uses bluetooth to communicate with the mesh device. This application does not collect, store or record any data communicating through bluetooth";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This application uses bluetooth to communicate with the mesh device. This application does not collect, store or record any data communicating through bluetooth";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fby.espbleota;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		26B7F7C7272BC87300A294E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0.13;
+				DEVELOPMENT_TEAM = QWY5DY832N;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/esp-ble-ota/pch/PrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "esp-ble-ota/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This application uses bluetooth to communicate with the mesh device. This application does not collect, store or record any data communicating through bluetooth";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This application uses bluetooth to communicate with the mesh device. This application does not collect, store or record any data communicating through bluetooth";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fby.espbleota;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		26B7F7C9272BC87300A294E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QWXF6GB4AV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fby.esp-ble-otaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/esp-ble-ota.app/esp-ble-ota";
+			};
+			name = Debug;
+		};
+		26B7F7CA272BC87300A294E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QWXF6GB4AV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fby.esp-ble-otaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/esp-ble-ota.app/esp-ble-ota";
+			};
+			name = Release;
+		};
+		26B7F7CC272BC87300A294E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QWXF6GB4AV;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fby.esp-ble-otaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "esp-ble-ota";
+			};
+			name = Debug;
+		};
+		26B7F7CD272BC87300A294E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QWXF6GB4AV;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fby.esp-ble-otaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "esp-ble-ota";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26B7F791272BC86D00A294E3 /* Build configuration list for PBXProject "esp-ble-ota" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26B7F7C3272BC87300A294E3 /* Debug */,
+				26B7F7C4272BC87300A294E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26B7F7C5272BC87300A294E3 /* Build configuration list for PBXNativeTarget "esp-ble-ota" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26B7F7C6272BC87300A294E3 /* Debug */,
+				26B7F7C7272BC87300A294E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26B7F7C8272BC87300A294E3 /* Build configuration list for PBXNativeTarget "esp-ble-otaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26B7F7C9272BC87300A294E3 /* Debug */,
+				26B7F7CA272BC87300A294E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26B7F7CB272BC87300A294E3 /* Build configuration list for PBXNativeTarget "esp-ble-otaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26B7F7CC272BC87300A294E3 /* Debug */,
+				26B7F7CD272BC87300A294E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26B7F78E272BC86D00A294E3 /* Project object */;
+}

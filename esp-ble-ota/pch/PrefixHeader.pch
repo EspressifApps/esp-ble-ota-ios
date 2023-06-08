@@ -1,0 +1,40 @@
+//
+//  PrefixHeader.pch
+//  esp-ble-ota
+//
+//  Created by fanbaoying on 2021/10/29.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define statusHeight [UIApplication sharedApplication].windows.firstObject.windowScene.statusBarManager.statusBarFrame.size.height
+
+#define ValidArray(f) (f!=nil && [f isKindOfClass:[NSArray class]] && [f count]>0)
+#define ValidDict(f) (f!=nil && [f isKindOfClass:[NSDictionary class]])
+
+#define DEVICENAME @"Pair Wiz Lamp"
+#define SERVICEUUID @"8018"
+#define RECV_FW_CHAR @"8020"
+#define COMMAND_CHAR @"8022"
+#define BLE_OTA_FILE @"ble_at.bin"
+
+#define COMMAND_ID_START 0x0001
+#define COMMAND_ID_END 0x0002
+#define COMMAND_ID_ACK 0x0003
+#define BLE_SEND_MAX_LEN 510
+
+#define BIN_ACK_SUCCESS 0x0000
+#define BIN_ACK_CRC_ERROR 0x0001
+#define BIN_ACK_SECTOR_INDEX_ERROR 0x0002
+#define BIN_ACK_PAYLOAD_LENGTH_ERROR 0x0003
+
+//带有RGBA的颜色设置
+#define UICOLOR_RGBA(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
