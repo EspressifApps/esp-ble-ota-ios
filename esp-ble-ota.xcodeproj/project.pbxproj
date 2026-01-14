@@ -22,9 +22,6 @@
 		26B7F7A6272BC87200A294E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26B7F7A5272BC87200A294E3 /* Assets.xcassets */; };
 		26B7F7A9272BC87200A294E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26B7F7A7272BC87200A294E3 /* LaunchScreen.storyboard */; };
 		26B7F7AC272BC87200A294E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F7AB272BC87200A294E3 /* main.m */; };
-		26B7F7B6272BC87300A294E3 /* esp_ble_otaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F7B5272BC87300A294E3 /* esp_ble_otaTests.m */; };
-		26B7F7C0272BC87300A294E3 /* esp_ble_otaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F7BF272BC87300A294E3 /* esp_ble_otaUITests.m */; };
-		26B7F7C2272BC87300A294E3 /* esp_ble_otaUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F7C1272BC87300A294E3 /* esp_ble_otaUITestsLaunchTests.m */; };
 		26B7F7D6272BCC0600A294E3 /* UILabel+LabelHeightAndWidth.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F7D2272BCC0600A294E3 /* UILabel+LabelHeightAndWidth.m */; };
 		26B7F7D7272BCC0600A294E3 /* payFirstNav.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F7D5272BCC0600A294E3 /* payFirstNav.m */; };
 		26B7F7E1272BCC3C00A294E3 /* ESPFBYBLEHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F7DA272BCC3C00A294E3 /* ESPFBYBLEHelper.m */; };
@@ -32,23 +29,6 @@
 		26B7F7E9272BCF4400A294E3 /* EspDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F7E7272BCF4400A294E3 /* EspDevice.m */; };
 		26B7F7EC272BCFDC00A294E3 /* EspSwitchDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B7F7EB272BCFDC00A294E3 /* EspSwitchDevice.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		26B7F7B2272BC87300A294E3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 26B7F78E272BC86D00A294E3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 26B7F795272BC86D00A294E3;
-			remoteInfo = "esp-ble-ota";
-		};
-		26B7F7BC272BC87300A294E3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 26B7F78E272BC86D00A294E3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 26B7F795272BC86D00A294E3;
-			remoteInfo = "esp-ble-ota";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		266BC7BB274C9A5400C242D6 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
@@ -79,11 +59,6 @@
 		26B7F7A8272BC87200A294E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26B7F7AA272BC87200A294E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26B7F7AB272BC87200A294E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		26B7F7B1272BC87300A294E3 /* esp-ble-otaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "esp-ble-otaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		26B7F7B5272BC87300A294E3 /* esp_ble_otaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = esp_ble_otaTests.m; sourceTree = "<group>"; };
-		26B7F7BB272BC87300A294E3 /* esp-ble-otaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "esp-ble-otaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		26B7F7BF272BC87300A294E3 /* esp_ble_otaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = esp_ble_otaUITests.m; sourceTree = "<group>"; };
-		26B7F7C1272BC87300A294E3 /* esp_ble_otaUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = esp_ble_otaUITestsLaunchTests.m; sourceTree = "<group>"; };
 		26B7F7CF272BCB9400A294E3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		26B7F7D2272BCC0600A294E3 /* UILabel+LabelHeightAndWidth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LabelHeightAndWidth.m"; sourceTree = "<group>"; };
 		26B7F7D3272BCC0600A294E3 /* payFirstNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = payFirstNav.h; sourceTree = "<group>"; };
@@ -101,20 +76,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		26B7F793272BC86D00A294E3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		26B7F7AE272BC87300A294E3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		26B7F7B8272BC87300A294E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -145,8 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				26B7F798272BC86D00A294E3 /* esp-ble-ota */,
-				26B7F7B4272BC87300A294E3 /* esp-ble-otaTests */,
-				26B7F7BE272BC87300A294E3 /* esp-ble-otaUITests */,
 				26B7F797272BC86D00A294E3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -155,8 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				26B7F796272BC86D00A294E3 /* esp-ble-ota.app */,
-				26B7F7B1272BC87300A294E3 /* esp-ble-otaTests.xctest */,
-				26B7F7BB272BC87300A294E3 /* esp-ble-otaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,23 +137,6 @@
 				26B7F7AB272BC87200A294E3 /* main.m */,
 			);
 			path = "esp-ble-ota";
-			sourceTree = "<group>";
-		};
-		26B7F7B4272BC87300A294E3 /* esp-ble-otaTests */ = {
-			isa = PBXGroup;
-			children = (
-				26B7F7B5272BC87300A294E3 /* esp_ble_otaTests.m */,
-			);
-			path = "esp-ble-otaTests";
-			sourceTree = "<group>";
-		};
-		26B7F7BE272BC87300A294E3 /* esp-ble-otaUITests */ = {
-			isa = PBXGroup;
-			children = (
-				26B7F7BF272BC87300A294E3 /* esp_ble_otaUITests.m */,
-				26B7F7C1272BC87300A294E3 /* esp_ble_otaUITestsLaunchTests.m */,
-			);
-			path = "esp-ble-otaUITests";
 			sourceTree = "<group>";
 		};
 		26B7F7CE272BCACF00A294E3 /* pch */ = {
@@ -268,42 +208,6 @@
 			productReference = 26B7F796272BC86D00A294E3 /* esp-ble-ota.app */;
 			productType = "com.apple.product-type.application";
 		};
-		26B7F7B0272BC87300A294E3 /* esp-ble-otaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 26B7F7C8272BC87300A294E3 /* Build configuration list for PBXNativeTarget "esp-ble-otaTests" */;
-			buildPhases = (
-				26B7F7AD272BC87300A294E3 /* Sources */,
-				26B7F7AE272BC87300A294E3 /* Frameworks */,
-				26B7F7AF272BC87300A294E3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				26B7F7B3272BC87300A294E3 /* PBXTargetDependency */,
-			);
-			name = "esp-ble-otaTests";
-			productName = "esp-ble-otaTests";
-			productReference = 26B7F7B1272BC87300A294E3 /* esp-ble-otaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		26B7F7BA272BC87300A294E3 /* esp-ble-otaUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 26B7F7CB272BC87300A294E3 /* Build configuration list for PBXNativeTarget "esp-ble-otaUITests" */;
-			buildPhases = (
-				26B7F7B7272BC87300A294E3 /* Sources */,
-				26B7F7B8272BC87300A294E3 /* Frameworks */,
-				26B7F7B9272BC87300A294E3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				26B7F7BD272BC87300A294E3 /* PBXTargetDependency */,
-			);
-			name = "esp-ble-otaUITests";
-			productName = "esp-ble-otaUITests";
-			productReference = 26B7F7BB272BC87300A294E3 /* esp-ble-otaUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -311,18 +215,10 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					26B7F795272BC86D00A294E3 = {
 						CreatedOnToolsVersion = 13.0;
-					};
-					26B7F7B0272BC87300A294E3 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 26B7F795272BC86D00A294E3;
-					};
-					26B7F7BA272BC87300A294E3 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 26B7F795272BC86D00A294E3;
 					};
 				};
 			};
@@ -340,8 +236,6 @@
 			projectRoot = "";
 			targets = (
 				26B7F795272BC86D00A294E3 /* esp-ble-ota */,
-				26B7F7B0272BC87300A294E3 /* esp-ble-otaTests */,
-				26B7F7BA272BC87300A294E3 /* esp-ble-otaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -355,20 +249,6 @@
 				26B7F7A6272BC87200A294E3 /* Assets.xcassets in Resources */,
 				26B7F7A4272BC86D00A294E3 /* Main.storyboard in Resources */,
 				266BC7C9274C9A5400C242D6 /* SVProgressHUD.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		26B7F7AF272BC87300A294E3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		26B7F7B9272BC87300A294E3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,37 +279,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		26B7F7AD272BC87300A294E3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				26B7F7B6272BC87300A294E3 /* esp_ble_otaTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		26B7F7B7272BC87300A294E3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				26B7F7C2272BC87300A294E3 /* esp_ble_otaUITestsLaunchTests.m in Sources */,
-				26B7F7C0272BC87300A294E3 /* esp_ble_otaUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		26B7F7B3272BC87300A294E3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 26B7F795272BC86D00A294E3 /* esp-ble-ota */;
-			targetProxy = 26B7F7B2272BC87300A294E3 /* PBXContainerItemProxy */;
-		};
-		26B7F7BD272BC87300A294E3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 26B7F795272BC86D00A294E3 /* esp-ble-ota */;
-			targetProxy = 26B7F7BC272BC87300A294E3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		26B7F7A2272BC86D00A294E3 /* Main.storyboard */ = {
@@ -488,6 +338,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -507,6 +358,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 			};
 			name = Debug;
 		};
@@ -547,6 +399,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -559,6 +412,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -625,94 +479,6 @@
 			};
 			name = Release;
 		};
-		26B7F7C9272BC87300A294E3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QWXF6GB4AV;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fby.esp-ble-otaTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/esp-ble-ota.app/esp-ble-ota";
-			};
-			name = Debug;
-		};
-		26B7F7CA272BC87300A294E3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QWXF6GB4AV;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fby.esp-ble-otaTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/esp-ble-ota.app/esp-ble-ota";
-			};
-			name = Release;
-		};
-		26B7F7CC272BC87300A294E3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QWXF6GB4AV;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fby.esp-ble-otaUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "esp-ble-ota";
-			};
-			name = Debug;
-		};
-		26B7F7CD272BC87300A294E3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QWXF6GB4AV;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fby.esp-ble-otaUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "esp-ble-ota";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -730,24 +496,6 @@
 			buildConfigurations = (
 				26B7F7C6272BC87300A294E3 /* Debug */,
 				26B7F7C7272BC87300A294E3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		26B7F7C8272BC87300A294E3 /* Build configuration list for PBXNativeTarget "esp-ble-otaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				26B7F7C9272BC87300A294E3 /* Debug */,
-				26B7F7CA272BC87300A294E3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		26B7F7CB272BC87300A294E3 /* Build configuration list for PBXNativeTarget "esp-ble-otaUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				26B7F7CC272BC87300A294E3 /* Debug */,
-				26B7F7CD272BC87300A294E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

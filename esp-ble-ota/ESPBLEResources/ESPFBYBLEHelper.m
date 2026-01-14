@@ -122,7 +122,7 @@ API_AVAILABLE(ios(10.0))
         
         [self.centralManager connectPeripheral:_cbPeripheral options:nil];
     } else{
-        NSLog(@"无设备可连接");
+        NSLog(@"No device available to connect");
     }
 }
 
@@ -144,37 +144,37 @@ API_AVAILABLE(ios(10.0))
 {
     switch (central.state) {
         case CBManagerStateUnknown:{
-            NSLog(@"为知状态");
+            NSLog(@"Unknown state");
             self.peripheralState = central.state;
         }
             break;
         case CBManagerStateResetting:
         {
-            NSLog(@"重置状态");
+            NSLog(@"Resetting state");
             self.peripheralState = central.state;
         }
             break;
         case CBManagerStateUnsupported:
         {
-            NSLog(@"不支持的状态");
+            NSLog(@"Unsupported state");
             self.peripheralState = central.state;
         }
             break;
         case CBManagerStateUnauthorized:
         {
-            NSLog(@"未授权的状态");
+            NSLog(@"Unauthorized state");
             self.peripheralState = central.state;
         }
             break;
         case CBManagerStatePoweredOff:
         {
-            NSLog(@"关闭状态");
+            NSLog(@"Powered off state");
             self.peripheralState = central.state;
         }
             break;
         case CBManagerStatePoweredOn:
         {
-            NSLog(@"开启状态－可用状态");
+            NSLog(@"Powered on - available state");
             self.peripheralState = central.state;
             NSLog(@"%ld",(long)self.peripheralState);
         }
@@ -225,7 +225,7 @@ API_AVAILABLE(ios(10.0))
 
 - (void)centralManager:(CBCentralManager *)central didFailToConnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error
 {
-    NSLog(@"%@",@"连接失败");
+    NSLog(@"%@",@"Connection failed");
     EspSwitchDevice *espSwitchDevice = self.bleDevicesSaveDic[peripheral.identifier.UUIDString];
     [self bleUpdateMessage:[NSString stringWithFormat:@"bleerror:Ble connect failed:%d:%@",BleConnectFailed, peripheral.identifier.UUIDString] ForDevice:espSwitchDevice];
     espSwitchDevice.isConnected = NO;
@@ -243,7 +243,7 @@ API_AVAILABLE(ios(10.0))
 - (void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error
 {
     EspSwitchDevice *espSwitchDevice = self.bleDevicesSaveDic[peripheral.identifier.UUIDString];
-    NSLog(@"didDisconnectPeripheral: %@",@"断开连接");
+    NSLog(@"didDisconnectPeripheral: %@",@"Disconnected");
     espSwitchDevice.isConnected = NO;
     espSwitchDevice.espDevice.isConnected = NO;
     espSwitchDevice.espDevice.charCommand=nil;
@@ -253,7 +253,7 @@ API_AVAILABLE(ios(10.0))
     [self.delegate bleDisconnectMsg:NO];
     
     if (error) {
-        NSLog(@"蓝牙异常断开：%@",error);
+        NSLog(@"Bluetooth disconnected abnormally: %@",error);
         [[NSNotificationCenter defaultCenter] postNotificationName:@"BleAbnormalDisconnect" object:nil];
         [self bleUpdateMessage:[NSString stringWithFormat:@"bleerror:Ble abnormal disconnect%@:%d:%@",error,BleAbnormalDisconnect, peripheral.identifier.UUIDString] ForDevice:espSwitchDevice];
     }else {
@@ -274,7 +274,7 @@ API_AVAILABLE(ios(10.0))
     espSwitchDevice.espDevice.isConnected = YES;
     [self.delegate bleDisconnectMsg:YES];
     [self bleUpdateMessage:[NSString stringWithFormat:@"blemsg:ble connect successful:%d:%@",BleConnectSuccessful,peripheral.identifier.UUIDString] ForDevice:espSwitchDevice];
-    NSLog(@"连接设备:%@成功",peripheral.name);
+    NSLog(@"Connected to device: %@ successfully",peripheral.name);
     
     [peripheral discoverServices:nil];
 }
@@ -288,7 +288,7 @@ API_AVAILABLE(ios(10.0))
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error
 {
     if (error) {
-        NSLog(@"扫描服务出现错误");
+        NSLog(@"Error while discovering services");
     }else {
         EspSwitchDevice *espSwitchDevice = self.bleDevicesSaveDic[peripheral.identifier.UUIDString];
         espSwitchDevice.espDevice.services = peripheral.services;
@@ -296,7 +296,7 @@ API_AVAILABLE(ios(10.0))
         // 遍历所有的服务
         for (CBService *service in peripheral.services)
         {
-            NSLog(@"服务:%@,name:%@,characteristic:%@",service.UUID.UUIDString, peripheral.name,service.characteristics);
+            NSLog(@"Service:%@, name:%@, characteristic:%@",service.UUID.UUIDString, peripheral.name,service.characteristics);
             [peripheral discoverCharacteristics:nil forService:service];
         }
     }
@@ -364,7 +364,7 @@ API_AVAILABLE(ios(10.0))
 - (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(nonnull CBCharacteristic *)characteristic error:(nullable NSError *)error
 {
     if (error) {
-        NSLog(@"ser:%@ -- char:%@:读取报错：%@, 报错内容：%@",characteristic.service.UUID.UUIDString, characteristic.UUID.UUIDString, characteristic, error);
+        NSLog(@"ser:%@ -- char:%@: read error: %@, details: %@",characteristic.service.UUID.UUIDString, characteristic.UUID.UUIDString, characteristic, error);
         [self.delegate bleCharacteristicNotifyMsg:nil];
         return;
     }
@@ -382,9 +382,9 @@ API_AVAILABLE(ios(10.0))
 
 - (void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
     if (error) {
-        NSLog(@"设备特征UUID = %@ 写入数据失败，失败原因:%@", characteristic.UUID, error);
+        NSLog(@"Device characteristic UUID = %@ write failed, reason: %@", characteristic.UUID, error);
     }else {
-        NSLog(@"设备特征UUID = %@ 写入数据成功", characteristic.UUID);
+        NSLog(@"Device characteristic UUID = %@ write succeeded", characteristic.UUID);
     }
 }
 

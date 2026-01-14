@@ -52,14 +52,14 @@ typedef enum _RemindMessageType {
     self.dataSource = [NSMutableArray arrayWithCapacity:0];
     self.binSectors = [NSMutableArray arrayWithCapacity:0];
     
-    self.nav = [[payFirstNav alloc]initWithLeftBtn:nil andWithTitleLab:@"主页" andWithRightBtn:@"扫描" andWithBgImg:nil];
+    self.nav = [[payFirstNav alloc]initWithLeftBtn:nil andWithTitleLab:@"Home" andWithRightBtn:@"Scan" andWithBgImg:nil];
     [_nav.rightBtn addTarget:self action:@selector(navRightBtn:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_nav];
     
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
     NSString *app_Version = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
     UILabel *versionLab = [[UILabel alloc]initWithFrame:CGRectMake(10, statusHeight + 44, SCREEN_WIDTH - 20, 15)];
-    versionLab.text = [NSString stringWithFormat:@"当前版本：%@", app_Version];
+    versionLab.text = [NSString stringWithFormat:@"Current version: %@", app_Version];
     [self.view addSubview:versionLab];
     
     self.espBleDeviceTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, statusHeight + 65, SCREEN_WIDTH, SCREEN_HEIGHT - (statusHeight + 65))];
@@ -94,14 +94,14 @@ typedef enum _RemindMessageType {
 
 - (void)navRightBtn:(UIButton *)sender {
     if (_isScanDevice) {
-        NSLog(@"停止扫描");
+        NSLog(@"Stop scanning");
         _isScanDevice = NO;
-        [_nav.rightBtn setTitle:@"扫描" forState:0];
+        [_nav.rightBtn setTitle:@"Scan" forState:0];
         [self.espFBYBleHelper stopDeviceScan];
     } else {
         _isScanDevice = YES;
-        [_nav.rightBtn setTitle:@"停止" forState:0];
-        NSLog(@"扫描设备");
+        [_nav.rightBtn setTitle:@"Stop" forState:0];
+        NSLog(@"Scan devices");
 //        [self.dataSource removeAllObjects];
         [self startDeviceScan];
     }
@@ -118,7 +118,7 @@ typedef enum _RemindMessageType {
 - (void)alterMessage:(NSString *)msgStr {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:msgStr preferredStyle:UIAlertControllerStyleAlert];
     
-    UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     }];
     [alert addAction:action1];
     [self presentViewController:alert animated:YES completion:nil];
@@ -170,10 +170,10 @@ typedef enum _RemindMessageType {
     reminderLab.font = [UIFont systemFontOfSize:12];
     if (device.isConnected) {
         reminderLab.textColor = UICOLOR_RGBA(39, 158, 242, 1);
-        reminderLab.text = @"connect";
+        reminderLab.text = @"Connected";
     }else {
         reminderLab.textColor = [UIColor redColor];
-        reminderLab.text = @"disconnect";
+        reminderLab.text = @"Disconnected";
     }
     [cell.contentView addSubview:reminderLab];
     
@@ -193,7 +193,7 @@ typedef enum _RemindMessageType {
         return;
     }
     _isScanDevice = NO;
-    [_nav.rightBtn setTitle:@"扫描" forState:0];
+    [_nav.rightBtn setTitle:@"Scan" forState:0];
     [self.espFBYBleHelper stopDeviceScan];
     EspDevice *device = _dataSource[indexPath.row];
     if (device.isConnected) {
@@ -208,7 +208,7 @@ typedef enum _RemindMessageType {
         [self.espFBYBleHelper connectBle:device callBackBlock:^(NSString * _Nonnull msg, EspDevice * _Nonnull encryptionSucDevice) {
             NSArray *msgArr = [msg componentsSeparatedByString:@":"];
             if (msgArr.count > 2 && [msgArr[2] intValue] == FoundCharacteristic) {
-                NSLog(@"连接过程返回数据 %@",msg);
+                NSLog(@"Connection process returned data %@",msg);
                 weakSelf.device = encryptionSucDevice;
                 weakSelf.device.isConnected = YES;
                 dispatch_async(dispatch_get_main_queue(), ^{
@@ -242,7 +242,7 @@ typedef enum _RemindMessageType {
     NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     NSArray *files = [[NSFileManager defaultManager] subpathsOfDirectoryAtPath:path error:nil];
     if (!ValidArray(files)) {
-        [self remindMessage:@"升级文件不存在" withType:hiddenImage];
+        [self remindMessage:@"Update file not found" withType:hiddenImage];
         return;
     }
     path = [path stringByAppendingPathComponent:files[0]];
@@ -250,11 +250,11 @@ typedef enum _RemindMessageType {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     BOOL isExist = [fileManager fileExistsAtPath:path];
     if (!isExist) {
-        [self remindMessage:@"升级文件路径错误" withType:hiddenImage];
+        [self remindMessage:@"Update file path error" withType:hiddenImage];
         return;
     }
     NSData *data =[NSData dataWithContentsOfFile:path];
-    NSLog(@"获取到的data：%@",data);
+    NSLog(@"Received data: %@",data);
     
     [self showProgress:YES];
     
@@ -276,7 +276,7 @@ typedef enum _RemindMessageType {
                     // failed
                     NSLog(@"ota COMMAND_ID_START failed");
                     [self showProgress:NO];
-                    [self alterMessage:@"配网失败"];
+                    [self alterMessage:@"Provisioning failed"];
                 }
                 break;
             case COMMAND_ID_END:
@@ -285,12 +285,12 @@ typedef enum _RemindMessageType {
                     [self.espFBYBleHelper disconnect:_device];
                     [self showProgress:NO];
                     NSLog(@"ota complete");
-                    [self alterMessage:@"配网成功"];
+                    [self alterMessage:@"Provisioning succeeded"];
                 } else {
                     // failed
                     NSLog(@"ota COMMAND_ID_END failed");
                     [self showProgress:NO];
-                    [self alterMessage:@"配网失败"];
+                    [self alterMessage:@"Provisioning failed"];
                 }
                 break;
             default:
@@ -301,7 +301,7 @@ typedef enum _RemindMessageType {
         if (message.index != self.sectorIndex) {
             NSLog(@"ota bin ack index failed");
             [self showProgress:NO];
-            [self alterMessage:@"配网失败"];
+            [self alterMessage:@"Provisioning failed"];
             return;
         }
         
@@ -314,14 +314,14 @@ typedef enum _RemindMessageType {
                 // OTA failed
                 NSLog(@"ota bin ack failed status: %d", message.status);
                 [self showProgress:NO];
-                [self alterMessage:@"配网失败"];
+                [self alterMessage:@"Provisioning failed"];
                 break;
         }
     }
     
 }
 - (void)bleDisconnectMsg:(BOOL)isConnected {
-    NSLog(@"蓝牙断开连接");
+    NSLog(@"Bluetooth disconnected");
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.espBleDeviceTableView reloadData];
     });
@@ -395,4 +395,3 @@ typedef enum _RemindMessageType {
 }
 
 @end
-
